@@ -65,8 +65,8 @@ from Shikimori.modules.helper_funcs.extraction import extract_user_and_text
 from Shikimori.modules.helper_funcs.string_handling import extract_time
 from Shikimori.modules.log_channel import gloggable, loggable
 
-BAN_GIF = "CgACAgUAAxkBAAK0XGLeQb3hs3yWorkBjUMFGMWENA8RAALZBAACT_vxVu249YEwNBU9KQQ"
-KICK_GIF = "CgACAgUAAxkBAAK0X2LeQev25-iVt1uCqZ2GMRpe-tnGAALbBAACT_vxVjmenxs25dq2KQQ"
+BAN_GIF = ""
+KICK_GIF = ""
 
 @connection_status
 @bot_admin
@@ -113,7 +113,7 @@ def ban(update: Update, context: CallbackContext) -> str:
 
     if is_user_ban_protected(chat, user_id, member) and user not in DEV_USERS:
         if user_id == OWNER_ID:
-            message.reply_text("Trying to put me against my own bot huh, BITCH?")
+            message.reply_text("Trying to put me against my own bot huh, ")
         elif user_id in DEV_USERS:
             message.reply_text("I can't act against Chrome.")
         elif user_id in DRAGONS:
@@ -197,7 +197,7 @@ def ban(update: Update, context: CallbackContext) -> str:
                 chat.id,
                 excp.message,
             )
-            message.reply_text("Uhm...that didn't work...")
+            message.reply_text("{mention_html(member.user.id, html.escape(member.user.first_name))} [<code>{member.user.id}</code>]You're not worthy to be in my group. Goodbye! ")
 
     return log_message
 
