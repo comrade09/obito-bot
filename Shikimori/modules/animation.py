@@ -137,7 +137,7 @@ hack_you = [
     "Hacking found telegram phone no.... 20.63%\n[███░░░░░░░░░░░░░░░░░]",
     "Hacking otp received... 86.21%\n[███████████████░░░░░]",
     "Hacking account accesed... 93.50%\n[█████████████████░░░]",
-    "hacking account hacked successfull....  100%\n[████████████████████]",
+    "hacking account hacked successfully....  100%\n[████████████████████]",
 ]
 
 
