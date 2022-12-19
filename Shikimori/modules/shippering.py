@@ -102,6 +102,6 @@ __New users will  chosen at 12AM {tomorrow}__"""
 
 __mod_name__ = "Couples / Shippering"
 __help__ = """
-*Couples / Shippering*
+*topusers / top2*
  ❍ `/topusers` or `/top2` :  get couples of the day!
 """
