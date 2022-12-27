@@ -195,7 +195,8 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",              
-                f"""**I am Alive Now!**""" )
+                f"""**I am Alive Now!**""" ,parse_mode=ParseMode.MARKDOWN )
+            
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
