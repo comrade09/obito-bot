@@ -31,7 +31,16 @@ from Shikimori import StartTime, dispatcher
 import Shikimori.modules.sql.users_sql as sql
 
 bot_name = f"{dispatcher.bot.first_name}"
-
+PM_START_TEXT = """
+\n◍ ʜᴇʏ {} ꜱᴀɴ I'ᴍ Kᴀᴏʀɪ Mɪʏᴀᴢᴏɴᴏ Fʀᴏᴍ {}
+◍ I'ᴍ Hɪɢʜʟʏ Aᴅᴠᴀɴᴄᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ 
+────────────────────────
+× Uᴘᴛɪᴍᴇ: {}
+× ᴜꜱᴇʀꜱ :{}
+× ᴄʜᴀᴛꜱ :{}
+────────────────────────
+✪ Hɪᴛ /help Tᴏ Sᴇᴇ Mʏ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs.
+"""
 
 buttons = [
     [
