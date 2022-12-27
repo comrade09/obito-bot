@@ -195,7 +195,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",              
-                f"""**I am Alive now !**""",
+                f"""**I am Alive now !**""", )
                 
             
         except Unauthorized:
