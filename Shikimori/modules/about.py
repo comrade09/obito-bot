@@ -57,7 +57,11 @@ buttons = [
     ],
 ]
 
-
+HELP_STRINGS = """
+➲ /start : ꜱᴛᴀʀᴛꜱ ᴍᴇ .
+➲ /help  : ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ ꜱᴇᴄᴛɪᴏɴ.
+  
+"""
 
 
 network_name = NETWORK_USERNAME.lower()
