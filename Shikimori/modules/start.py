@@ -47,7 +47,7 @@ import Shikimori.modules.sql.users_sql as sql
 bot_name = f"{dispatcher.bot.first_name}"
 
 PM_START_TEXT = """
-\n◍ ʜᴇʏ {} ꜱᴀɴ (https://telegra.ph/file/b2d554241222fa7ea16a5.jpg)
+\n◍ ʜᴇʏ {} ꜱᴀɴ 
 I'ᴍ {} Fʀᴏᴍ {}
 ◍ I'ᴍ Hɪɢʜʟʏ Aᴅᴠᴀɴᴄᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ 
 ────────────────────────
