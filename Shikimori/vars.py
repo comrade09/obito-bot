@@ -182,7 +182,18 @@ else:
     except ValueError:
         raise Exception(
             "Your blacklisted chats list does not contain valid integers.")
-            
+    
+PM_START_TEXT = """
+\n◍ ʜᴇʏ {} ꜱᴀɴ (https://telegra.ph/file/b2d554241222fa7ea16a5.jpg)
+I'ᴍ {} Fʀᴏᴍ {}
+◍ I'ᴍ Hɪɢʜʟʏ Aᴅᴠᴀɴᴄᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ 
+────────────────────────
+× Uᴘᴛɪᴍᴇ: {}
+× ᴜꜱᴇʀꜱ :{}
+× ᴄʜᴀᴛꜱ :{}
+────────────────────────
+✪ Hɪᴛ /help Tᴏ Sᴇᴇ Mʏ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs.
+"""        
 
 HELP_STRINGS = """
 ʜᴇʏ ᴛʜᴇʀᴇ... ɪ'ᴍ ʀɪᴋᴋᴀ ᴛᴀᴋᴀɴᴀꜱʜɪ🧚‍♂️
