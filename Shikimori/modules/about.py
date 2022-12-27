@@ -32,7 +32,8 @@ import Shikimori.modules.sql.users_sql as sql
 
 bot_name = f"{dispatcher.bot.first_name}"
 PM_START_TEXT = """
-\n◍ ʜᴇʏ {} ꜱᴀɴ I'ᴍ Kᴀᴏʀɪ Mɪʏᴀᴢᴏɴᴏ Fʀᴏᴍ {}
+\n◍ ʜᴇʏ {} ꜱᴀɴ 
+I'ᴍ {} Fʀᴏᴍ {}
 ◍ I'ᴍ Hɪɢʜʟʏ Aᴅᴠᴀɴᴄᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ 
 ────────────────────────
 × Uᴘᴛɪᴍᴇ: {}
