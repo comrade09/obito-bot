@@ -46,8 +46,17 @@ import Shikimori.modules.sql.users_sql as sql
 
 bot_name = f"{dispatcher.bot.first_name}"
 
-IMG_START = START_MEDIA.split(".")
-start_id = IMG_START[-1]
+PM_START_TEXT = """
+\n◍ ʜᴇʏ {} ꜱᴀɴ (https://telegra.ph/file/b2d554241222fa7ea16a5.jpg)
+I'ᴍ {} Fʀᴏᴍ {}
+◍ I'ᴍ Hɪɢʜʟʏ Aᴅᴠᴀɴᴄᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ 
+────────────────────────
+× Uᴘᴛɪᴍᴇ: {}
+× ᴜꜱᴇʀꜱ :{}
+× ᴄʜᴀᴛꜱ :{}
+────────────────────────
+✪ Hɪᴛ /help Tᴏ Sᴇᴇ Mʏ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs.
+"""
 
 buttons = [
     [
@@ -56,9 +65,14 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
-        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATE_CHANNEL}"),   
+        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATE_CHANNEL}"),
     ], 
+    [
+        InlineKeyboardButton(text=f"ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"),
+    ],
 ]
+
+
 
 def start(update: Update, context: CallbackContext):
     args = context.args
