@@ -32,17 +32,7 @@ import Shikimori.modules.sql.users_sql as sql
 
 bot_name = f"{dispatcher.bot.first_name}"
 
-PM_START_TEXT = """
-\n◍ I'ᴍ ʀɪᴋᴋᴀ ᴛᴀᴋᴀɴᴀꜱʜɪ Fʀᴏᴍ Yᴏᴜʀ ᴄʜūɴɪʙʏō ᴅᴇᴍᴏ ᴋᴏɪ ɢᴀ ꜱʜɪᴛᴀɪ
-◍ ➻ ᴘᴏᴡᴇʀ ɪs ᴀ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡʜɪᴄʜ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ᴀɴᴅ sᴇᴄᴜʀᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ʜᴜɢᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴘʟᴜɢɪɴs.
-๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴍᴏᴅᴜʟᴇs ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs.
-────────────────────────
-   f"\n*➻ ᴜᴩᴛɪᴍᴇ »* {uptime}"
-   f"\n*➻ ᴜsᴇʀs »* {sql.num_users()}"
-   f"\n*➻ ᴄʜᴀᴛs »* {sql.num_chats()}"  
-────────────────────────
-✪ Hɪᴛ /help Tᴏ Sᴇᴇ Mʏ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs.
-"""
+
 buttons = [
     [
         InlineKeyboardButton(
@@ -57,11 +47,6 @@ buttons = [
     ],
 ]
 
-HELP_STRINGS = """
-➲ /start : ꜱᴛᴀʀᴛꜱ ᴍᴇ .
-➲ /help  : ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ ꜱᴇᴄᴛɪᴏɴ.
-  
-"""
 
 
 network_name = NETWORK_USERNAME.lower()
