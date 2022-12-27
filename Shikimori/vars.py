@@ -184,7 +184,8 @@ else:
             "Your blacklisted chats list does not contain valid integers.")
     
 PM_START_TEXT = """
-\n◍ ʜᴇʏ {} ꜱᴀɴ 
+`Hey There!` [👩‍💼](https://telegra.ph/file/b2d554241222fa7ea16a5.jpg) `My name is` *Rikka Takanashi*
+◍ ʜᴇʏ {} ꜱᴀɴ 
 I'ᴍ {} Fʀᴏᴍ {}
 ◍ I'ᴍ Hɪɢʜʟʏ Aᴅᴠᴀɴᴄᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ 
 ────────────────────────
