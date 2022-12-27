@@ -52,6 +52,7 @@ from Shikimori import(
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from Shikimori.modules import ALL_MODULES
 from telegram import ParseMode, Update
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.error import (
     BadRequest,
     Unauthorized,
@@ -192,38 +193,21 @@ alive_id = ALIVE_ID[-1]
 def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            if alive_id in ("jpeg", "jpg", "png"):
-                msg = dispatcher.bot.send_photo(
-                f"@{SUPPORT_CHAT}",
-                photo=ALIVE_MEDIA,
-                caption="👋 Hi, i'm alive.",
-                parse_mode=ParseMode.MARKDOWN
-                )
-            elif alive_id in ("mp4", "mkv"):
-                msg = dispatcher.bot.send_video(
-                f"@{SUPPORT_CHAT}",
-                ALIVE_MEDIA,
-                caption="👋 Hi, i'm alive.",
-                parse_mode=ParseMode.MARKDOWN
-                )
-            elif alive_id in ("gif", "webp"):
-                msg = dispatcher.bot.send_animation(
-                f"@{SUPPORT_CHAT}",
-                ALIVE_MEDIA,
-                caption="👋 Hi, i'm alive.",
-                parse_mode=ParseMode.MARKDOWN
-                )
-            else:
-                msg = dispatcher.bot.send_message(
-                f"@{SUPPORT_CHAT}",
-                "👋 Hi, i'm alive.",
-                parse_mode=ParseMode.MARKDOWN
-                )
-            time.sleep(15)
-            try:
-                msg.delete()
-            except BadRequest:
-                pass
+            dispatcher.bot.sendMessage(
+                f"@{SUPPORT_CHAT}",              
+                f"""**I Am Ready To Concert Baby !**""",
+                parse_mode=ParseMode.MARKDOWN,
+                reply_markup=InlineKeyboardMarkup(
+                [
+                  [                  
+                       InlineKeyboardButton(
+                             text="Start in Group",
+                             url="https://t.me/rikka_tyrant_bot?startgroup=true")
+                     ] 
+                ]
+            ),
+        )
+            
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
