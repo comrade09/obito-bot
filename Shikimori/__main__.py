@@ -195,9 +195,18 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",              
-                f"""**I am Alive now !**""", )
-                
-            
+                f"""**I Am Ready To Concert Darling [🙂](https://telegra.ph/file/689ae81c495da6c295fe2.jpg)!**""",
+                parse_mode=ParseMode.MARKDOWN,
+                reply_markup=InlineKeyboardMarkup(
+                [
+                  [                  
+                       InlineKeyboardButton(
+                             text="✦ PLAY VIOLEN ✦",
+                             url="https://t.me/KaoriXRobot?startgroup=true")
+                     ] 
+                ]
+            ),
+        )
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
@@ -241,4 +250,3 @@ if __name__ == "__main__":
     telethn.start(bot_token=TOKEN)
     pbot.start()
     main()
-
