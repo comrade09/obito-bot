@@ -195,18 +195,8 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",              
-                f"""**I Am Ready To Concert Baby !**""",
-                parse_mode=ParseMode.MARKDOWN,
-                reply_markup=InlineKeyboardMarkup(
-                [
-                  [                  
-                       InlineKeyboardButton(
-                             text="Start in Group",
-                             url="https://t.me/rikka_tyrant_bot?startgroup=true")
-                     ] 
-                ]
-            ),
-        )
+                f"""**I am Alive now !**""",
+                
             
         except Unauthorized:
             LOGGER.warning(
