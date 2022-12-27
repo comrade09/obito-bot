@@ -184,7 +184,7 @@ else:
             "Your blacklisted chats list does not contain valid integers.")
     
 PM_START_TEXT = """
-\n◍ ʜᴇʏ {} ꜱᴀɴ (https://telegra.ph/file/b2d554241222fa7ea16a5.jpg)
+\n◍ ʜᴇʏ {} ꜱᴀɴ 
 I'ᴍ {} Fʀᴏᴍ {}
 ◍ I'ᴍ Hɪɢʜʟʏ Aᴅᴠᴀɴᴄᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ 
 ────────────────────────
